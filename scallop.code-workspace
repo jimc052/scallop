@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "scallop",
+			"path": "../scallop"
+		},
+		{
+			"name": "scallop_vue",
+			"path": "../scallop_vue"
+		}
+	],
+	"settings": {}
+}

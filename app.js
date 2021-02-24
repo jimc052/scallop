@@ -10,6 +10,7 @@ let setting = {debug: true, path: ""};
 const Window = require("./page/window");
 const monkey = require("./page/monkey");
 const explore = require("./page/explore");
+const adb = require("./page/adb");
 
 Window.prototype.menu = [{
 		label: 'monkey',
@@ -35,8 +36,20 @@ Window.prototype.menu = [{
 				explore.window.show();
 			}
 		}
+	},  {
+		label: '指令集',
+		accelerator: 'Command+B',
+		click: function (item, focusedWindow) {
+			if(focusedWindow == adb.window) {
+
+			} else if(adb.window == null)
+				adb.create();
+			else {
+				adb.window.show();
+			}
+		}
 	}
-]
+];
 
 try{
 	//(process.platform !== 'darwin')

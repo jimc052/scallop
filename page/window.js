@@ -155,7 +155,8 @@ Window.prototype.create = function(){
 		}
 	});
   this.window.loadURL( 
-    (debug == true ? 'http://localhost:8080' : 'https://jimc052.github.io/shell') 
+    (debug == true ? 'http://localhost:8080' : 'https://jimc052.github.io/shell')
+		// 'https://jimc052.github.io/shell' 
     + '/'+ this.props.name + '.html'
   );
 	

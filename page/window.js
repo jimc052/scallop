@@ -51,13 +51,13 @@ Window.prototype.createMenu = function(){
 				role: 'selectall'
 			}, {
 				type: 'separator'
-			}, {
-				label: '搜尋',
-				accelerator: 'CmdOrCtrl+F',
-				//key: 'reopenMenuItem',
-				click: function () {
-					monkeyWindow.webContents.send("search");
-				}
+			// }, {
+			// 	label: '搜尋',
+			// 	accelerator: 'CmdOrCtrl+F',
+			// 	//key: 'reopenMenuItem',
+			// 	click: function () {
+			// 		monkeyWindow.webContents.send("search");
+			// 	}
 			}]
 		}, {
 		label: '查看',

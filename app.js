@@ -79,9 +79,8 @@ try{
 }
 
 app.on('ready', ()=>{
-	monkey.create();
-	// createAdbWindow();
-	// createExploreWindow();
+	// monkey.create();
+	adb.create();
 });
 
 app.on('browser-window-created', function (event, win) {

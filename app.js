@@ -5,7 +5,7 @@ const app = electron.app;
 const Menu = electron.Menu;
 const dialog = electron.dialog;
 let ipcMain = electron.ipcMain;
-let path = "", bookmark = [], separator;
+let path = "", separator;
 let setting = {debug: true, path: ""};
 const Window = require("./page/window");
 const monkey = require("./page/monkey");
@@ -14,7 +14,7 @@ const adb = require("./page/adb");
 
 Window.prototype.menu = [{
 		label: 'monkey',
-		accelerator: 'CmdOrCtrl+M',
+		accelerator: 'Ctrl+M',
 		click: function (item, focusedWindow) {
 			if(focusedWindow == monkey.window) {
 
@@ -26,7 +26,7 @@ Window.prototype.menu = [{
 		}
 	},  {
 		label: '檔案管理',
-		accelerator: 'Command+F',
+		accelerator: 'Ctrl+F',
 		click: function (item, focusedWindow) {
 			if(focusedWindow == explore.window) {
 
@@ -38,7 +38,7 @@ Window.prototype.menu = [{
 		}
 	},  {
 		label: '指令集',
-		accelerator: 'Command+B',
+		accelerator: 'Ctrl+B',
 		click: function (item, focusedWindow) {
 			if(focusedWindow == adb.window) {
 

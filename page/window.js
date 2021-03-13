@@ -154,6 +154,8 @@ Window.prototype.create = function(){
 			enableRemoteModule: true
 		}
 	});
+	// this.window.loadURL('file://' + __dirname + '/index.html' + def);
+
   this.window.loadURL( 
     (debug == true ? 'http://localhost:8080' : 'https://jimc052.github.io/shell')
 		// 'https://jimc052.github.io/shell' 

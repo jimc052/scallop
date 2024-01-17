@@ -7,3 +7,4 @@ Monkey.prototype = Object.create(Window.prototype); // 原型繼承*****
 Monkey.prototype.constructor = Monkey;
 
 module.exports = new Monkey({name: "monkey"});
+
